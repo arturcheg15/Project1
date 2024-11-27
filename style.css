@@ -1,0 +1,11 @@
+.logo{
+    margin-left: 150px;
+}
+.top-menu{
+    list-style: none;
+    margin-left: 250px;
+    margin-top: 0px;
+    }
+.top-menu li{
+    display:inline-block;
+}
