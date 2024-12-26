@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Банковский сайт</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-       <header> <div class="logo"> Логотип </div>
-        <nav>
+       <header class="header"> 
+        <div class="header__logo"> Логотип </div>
+        <nav class="header__menu">
             <ul class="top-menu">
-                <li><a href="#">Главная</a></li>
+                <li class="top-menu__home top-menu__home--active"><a href="#">Главная</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">Кредит</a></li>
                 <li><a href="#">Ипотека</a></li>
@@ -19,18 +21,22 @@
             </ul>
            </nav>
        </header>
-       <main>
+       <main class="main">
 
-        <section>
-            <div>
-             <h1>Оформление карты</h1>
-             <p>Преимущества карты</p>
-             <ul>
+        <section class="main__section1">
+            
+             <h1 class="card__form">Оформление карты</h1>
+             <div class="card__benefits">
+                <p>Преимущества карты</p>
+             <ul class="card__listbenefits">
                 <li>До 250 000 рублей переводами</li>
                 <li>Скидки на товары членов клуба</li>
-            </ul> 
-             <p>Варианты</p> 
-             <ul>
+            </ul>
+            </div>
+        
+             <div class="card__variation">
+                <p>Варианты</p> 
+             <ul class="card__listvariations">
                 <li><a href="#">Вариант 1</a></li>
                 <img src="images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png" alt="карта 1" width="350" height="350">
                 <li><a href="#">Вариант 2</a></li>
@@ -44,33 +50,48 @@
             </div>
         </section>
 
-        <section>
-            <div class="section1">
+        <section  class="main__section2">
+            <div class="credits__title">
                 
-                    <h1>Кредиты</h1>
-                    <ul>
-                        <li><a href="#">Автокредит</a></li>
-                        <img src="images/машина.jpg" alt="машина" width="350" height="350">
-                        <li><a href="#">Ипотека</a></li>
-                        <img src="images/ипотека.webp" alt="домик" width="350" height="350">
-                        <li><a href="#">Рефинансирование</a></li>
-                        <img src="images/rrefinace.jpg" alt="refinace" width="350" height="350">
-                        <li><a href="#">Кредит на образование</a></li>
-                        <img src="images/образоваие.jpg" alt="образование" width="350" height="350">
-                    </ul>
+                    <h1 id="credits">Кредиты </h1>
+                </div >
 
-                    
+                    <div class="credits__list">
+                        
+                        
+                        <li>
+                            <img  src="images/машина.jpg" alt="машина" width="350" height="350" >
+                           <h2>Автокредит</h2>
+                            <a href="#"></a>
+                        </li>
+                        
+                        <li>
+                            <img src="images/ипотека.webp" alt="домик" width="350" height="350">
+                            <h2>Ипотека</h2>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                           <img src="images/rrefinace.jpg" alt="refinace" width="350" height="350">
+                            <h2>Рефиансирование</h2>
+                           <a href="#"></a>
+                        </li>
+                        <li>
+                            <img src="images/образоваие.jpg" alt="образование" width="350" height="350">
+                            <h2>Образование</h2>
+                            <a href="#"></a>
+                        </li>
+                        
+                </div>
+            </section>
             
-            
-                     
-                    </div>
-        </section>
-        <section>
-            <div>
+            <section class="main__section3">
+            <div class="app__title">
             <h1>Приложение</h1>
-            <p>Все это и многое другое есть в приложении</p>
+            <p>Все это и многое другое есть в приложении</p> 
+        </div>
             <img src="images/приложение.webp" alt="приложение"  width="350" height="350">
-            <ul>
+            <div class="app__links">
+                <ul>
                 <li><a href="#">Скачать</a></li>
                 <li><a href="#">Открыть в браузере</a></li>
             </ul>
@@ -78,13 +99,25 @@
             </div>
         </section>
 
-        <section>
-            <h1>Часто задаваемые вопросы</h1>
-           <a href="#">перейти</a> 
+        <section class="main__section4">
+            <div class="asking__questions">
+                <h1>Часто задаваемые вопросы</h1>
+                <a href="#">перейти</a>
+            </div>
+        
+            <div class="back__connect">
+                <h1>Обратная связь</h1>
+                <a href="#">перейти</a>
+            </div>
         </section>
-        <section>
-            <h1>Обратная связь</h1>
-            <a href="#">перейти</a>
+
+        <section class="main__section5">
+          <form action="#">
+            <h3 class="enter__lk">Вход в личный кабинет</h3>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button>Войти</button>
+          </form>
         </section>
        
         
@@ -93,19 +126,19 @@
         
        </main>
        
-       <footer>
-        <section>
+       <footer class="footer">
+        <section class="footer__section1">
           <h4>Обратная связь</h4>
           <li><p>+79632356411</p></li>
           <li><a href="#"><img src="images/тг.webp" alt="тг" width="40" height="40"></a></li> 
         </section>
 
-        <section>
-            <ul>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Вклады</a></li>
-                <li><a href="#">Инвестиции</a></li>
-                <li><a href="#">Кредиты</a></li>
+        <section class="footer__section2">
+            <ul class="low__menu">
+                <li class="low-menu__stocks"><a href="#">Акции</a></li>
+                <li class="low-menu__inputs"><a href="#">Вклады</a></li>
+                <li class="low-menu__investment"><a href="#">Инвестиции</a></li>
+                <li class="low-menu__credits"><a href="#credits">Кредиты</a></li>
             </ul>
         </section>
        </footer>
