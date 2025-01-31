@@ -1,17 +1,4 @@
-.logo{
-    margin-left: 150px;
-}
-.top-menu{
-    list-style: none;
-    margin-left: 250px;
-    margin-top: 0px;
-    }
-.top-menu li{
-    display:inline-block;
-}
-.section1{
-    display: inline-block;
-}
+
 /*Подключение шрифтов*/
 @import "fonts.css";
 /*Подключение основных стилей*/
