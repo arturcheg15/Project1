@@ -5,11 +5,11 @@ box-sizing: border-box;
 }
 html,
 body {
-font-family: 'Arial', sans-serif;
+font-family: "Poppins",'Arial', sans-serif;
 font-size: 18px;
 line-height: 30px;
-color: #000000;
-background-color: #ffffff;
+color: black;
+background-color: white;
 overflow-x: hidden;
 }
 img {

@@ -1,6 +1,6 @@
 .header{
-    background-color:rgb(240, 190, 129)
-    color(srgb rgb(226, 177, 177) rgb(105, 170, 105) rgb(228, 228, 236))
+    background-color:white;
+    color: black;
 }
 
 .header__list{
