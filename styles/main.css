@@ -3,15 +3,13 @@
     color: black;
 }
 .card__wrapper{
-    display: flex;
+   display: flex;
     gap: 10px;
    }
-   .card__wrap-right{
-    width: 500px;
-    flex-shrink: 0;
-   }
+   
+   
    .card__wrapper{
-    background-color: rgb(62, 120, 167);
+    background-color: white;
      color: rgb(255, 255, 255);
      padding: 10px;
     }
@@ -24,8 +22,93 @@
         margin-top: auto;
         margin-right: auto;
        }
-       .card__wrap-left{
-        display: flex;
-        flex-direction: column;
-       }
-              
+       
+.card__list{
+    display: flex;
+   
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Колонки по 200 пикселей, растягиваются до максимума */
+    gap: 10px; /* Отступы между изображениями */
+}   
+.card__list li{
+    max-width: 200px; /* Изображения занимают ширину колонки */
+    
+    height: auto; /* Сохраняем пропорции изображения */
+    margin: 10px; /* Отступы между изображениями */
+}     
+.card__image{
+    width: 100%;
+ height: 170px;
+    object-fit:fill;
+    
+}
+.credits__list{
+display: flex;
+gap: 10px;
+list-style: none;
+align-items: end;
+
+}
+.credits__item{
+    height: 300px;
+}
+.credits__image{
+    height: 170px;
+}
+.card__list li:hover{
+   transform: scale(1.1);
+   transition: all 0.7s ease-out;
+}
+.card{
+    margin: 20px;
+}
+.credits{
+    margin: 20px;
+    margin-left: 0px;
+}
+.app{
+    margin: 20px;
+    margin-left: 0px;
+}
+.credits__list li:hover{
+    transform: scale(1.1);
+    transition: all 0.7s ease-out;  
+}
+.asking{
+    margin: 70px;
+    margin-left: 0px;
+}
+.email{
+    margin: 90px;
+    margin-left: 0px;
+}
+.app__item:hover{
+    background-color:rgb(32, 24, 153);
+    color: #FFF;
+    transition: all 0.7s ease-out;
+   }
+   .asking__link:hover{
+    background-color:rgb(32, 24, 153);
+    color: #FFF;
+    transition: all 0.7s ease-out; 
+   }
+.email__button:hover{
+    background-color:rgb(32, 24, 153);
+    color: #FFF;
+    transition: all 0.7s ease-out;     
+}
+.footer__item:hover{
+    background-color:rgb(32, 24, 153);
+    color: #FFF;
+    transition: all 0.7s ease-out;    
+}   
+.app__item{
+    margin:10px;
+}
+.footer__item{
+    margin:10px;
+}
+.asking{
+    display:flex;
+    justify-content: space-around;
+
+}

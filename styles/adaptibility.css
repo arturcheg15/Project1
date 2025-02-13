@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+.asking{
+    width: 600px;
+}
+.card{
+    width: 600px;   
+}
+.credits{
+    width: 600px;
+}
+.app{
+    width: 600px;
+}
+.email{
+    width: 600px;    
+}
+.footer{
+    width: 600px;   
+}
+    
+}

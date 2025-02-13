@@ -1,161 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Банковский сайт</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Банковский сайт</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-       <header class="header container"> 
-        <div class="header__logo"> Логотип </div>
-        <nav class="header__menu">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#">Главная</a></li>
-                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
-                <li class="header__item"><a class="header__link" href="#">Кредит</a></li>
-                <li class="header__item"><a class="header__link" href="#">Ипотека</a></li>
-                <li class="header__item"><a class="header__link" href="#">Личный кабинет</a></li>
-                <li class="header__login button"><a class="header__link" href="#">Вход</a></li>
-                <li class="header__login button"><a class="header__link" href="#">Регистрация</a></li>
-            </ul>
-           </nav>
-       </header>
-       <main class="main container">
+  <header class="header container">
+    <div class="header__logo"> Логотип </div>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+        <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+        <li class="header__item"><a class="header__link" href="#">Кредит</a></li>
+        <li class="header__item"><a class="header__link" href="#">Ипотека</a></li>
+        <li class="header__item"><a class="header__link" href="#">Личный кабинет</a></li>
+        <li class="header__login button"><a class="header__link" href="#">Вход</a></li>
+        <li class="header__login button"><a class="header__link" href="#">Регистрация</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main container">
 
-        <section class="card">
-            
-             <h2 class="card__title">Оформление карты</h2>
-                 <div class="card__wrapper">
-                  <p class="card__text">Преимущества карты</p>
-                  <ul class="card__list">
-                    <li class="card__item button">До 250 000 рублей переводами</li>
-                    <li class="card__item button">Скидки на товары членов клуба</li>
-                  </ul>
-                 </div>
-       
-        
-             <div class="card__wrapper">
-                <p>Варианты</p> 
-                <ul class="card__list">
-                  <div class="card__wrap-left">
-                    <li class="card__item button"><a  class="card__link" href="#">Вариант 1</a></li>
-                    <img  class="card__image img"  src="images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png" alt="карта 1" width="350" height="350">
-                  </div>
-                  <div class="card__wrap-left">
-                    <li class="card__item button"><a class="card__link" href="#">Вариант 2</a></li>
-                    <img class="card__image img" src="images/синяя карта.webp" alt="карта 2" width="350" height="350">
-                  </div>
-                  <div class="card__wrap-right">
-                    <li class="card__item button"><a class="card__link" href="#">Вариант 3</a></li>
-                    <img class="card__image img" src="images/зеленая карта.webp" alt="карта 3" width="350" height="350">
-                  </div>
-                  <div class="card__wrap-right"></div>
-                    <li class="card__item button"><a class="card__link" href="#">Вариант 4</a></li>
-                    <img class="card__image img" src="images/red-bank-card-.webp" alt="карта 4" width="350" height="350">
-                  </div>
-                </ul> 
-            </div>
-        </section>
+    <section class="card grid-section">
 
-        <section  class="credits">
-            <h1  class="credits__title" id="credits">Кредиты </h1>
-                <ul class="credits__list">
-                        
-                    <div class="credits__wrap-left">
-                         <li class="credits__item button">
-                            <img  class="credits__image img"  src="images/машина.jpg" alt="машина" width="350" height="350" >
-                           <h2 class="credits__title">Автокредит</h2>
-                            <a  class="credits__link" href="#"></a>
-                         </li>
-                    </div>
-                    <div class="credits__wrap-left">
-                         <li class="credits__item button">
-                            <img class="credits__image img" src="images/ипотека.webp" alt="домик" width="350" height="350">
-                            <h2 class="credits__title">Ипотека</h2>
-                            <a class="credits__link" href="#"></a>
-                         </li>
-                    </div>
-                    <div class="credits__wrap-right">
-                         <li class="credits__item button">
-                           <img class="credits__image img" src="images/rrefinace.jpg" alt="refinace" width="350" height="350">
-                            <h2 class="credits__title">Рефиансирование</h2>
-                           <a class="credits__link" href="#"></a>
-                         </li>
-                    </div>
-                    <div class="credits__wrap-right">
-                         <li class="credits__item button">
-                            <img class="credits__image img" src="images/образоваие.jpg" alt="образование" width="350" height="350">
-                            <h2 class="credits__title">Образование</h2>
-                            <a class="credits__link" href="#"></a>
-                         </li>
-                    </div>
-            
-            </section>
-            
-            <section class="app">
-                
-            <div class="app__wrapper">
-            <h1 class="app__title">Приложение</h1>
-            <p class="app__text">Все это и многое другое есть в приложении</p> 
-        </div>
-            <img class="app__image img" src="images/приложение.webp" alt="приложение"  width="350" height="350">
-            <div class="app__wrapper">
-                <ul class="app__list">
-                <li class="app__item button"><a class="app__link" href="#">Скачать</a></li>
-                <li class="app__item button"><a class="app__link" href="#">Открыть в браузере</a></li>
-            </ul>
-        
-            </div>
-        
-        </section>
+      <h2 class="card__title">Оформление карты</h2>
+      <div class="card__wrapper grid-container">
+        <p class="card__text">Преимущества карты</p>
+        <ul class="card__list">
+          <li class="card__item grid-item">До 250 000 рублей переводами</li>
+          <li class="card__item grid-item">Скидки на товары членов клуба</li>
+        </ul>
+      </div>
 
-        <section class="asking">
-            
-            <div class="asking__wrapper">
-                <h1 class="asking__title">Часто задаваемые вопросы</h1>
-                <a class="asking__link button" href="#">перейти</a>
-            </div>
-        
-            <div class="asking__wrapper">
-                <h1 class="asking__title">Обратная связь</h1>
-                <a class="asking__link button" href="#">перейти</a>
-            </div>
-        
-        </section>
 
-        <section class="email">
-          <form class="email__form" action="#">
-            <h3 class="email__title">Вход в личный кабинет</h3>
-            <input class="email__item" type="email" name="email" placeholder="Электронная почта" required>
-            <input class="email__item" type="password" name="password" placeholder="Пароль" required>
-            <button class="email__button button">Войти</button>
-          </form>
-        </section>
-       
-        
-       
-        
-        
-       </main>
-       
-       <footer class="footer container">
-        <section class="footer__connect">
-          <h4 class="footer__title">Обратная связь</h4>
-          <li class="footer__item"><p>+79632356411</p></li>
-          <li class="footer__item"><a  class="footer__link" href="#"><img src="images/тг.webp" alt="тг" width="40" height="40"></a></li> 
-        </section>
+      <div class="card__wrapper grid-container">
+        <p>Варианты</p>
+        <ul class="card__list">
 
-        <section class="footer__menu">
-            <ul class="footer__list">
-                <li class="footer__item button"><a class="footer__link" href="#">Акции</a></li>
-                <li class="footer__item button"><a class="footer__link" href="#">Вклады</a></li>
-                <li class="footer__item button"><a class="footer__link" href="#">Инвестиции</a></li>
-                <li class="footer__item button"><a class="footer__link" href="#credits">Кредиты</a></li>
-            </ul>
-        </section>
-       </footer>
-       
+          <li class="card__item button">Вариант 1<img class="card__image img"
+              src="images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png"
+              alt="карта 1" width="200" height="200"><a class="card__link  button" href="#"></a></li>
+
+
+
+          <li class="card__item button">Вариант 2<img class="card__image img" src="images/синяя карта.webp"
+              alt="карта 2" width="200" height="200"><a class="card__link" href="#"></a></li>
+
+
+
+          <li class="card__item button">Вариант 3<img class="card__image img" src="images/зеленая карта.webp"
+              alt="карта 3" width="200" height="200"><a class="card__link" href="#"></a></li>
+
+
+
+          <li class="card__item button">Вариант 4<img class="card__image img" src="images/red-bank-card-.webp"
+              alt="карта 4" width="200" height="200"><a class="card__link" href="#"></a></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="credits">
+      <h1 class="credits__title" id="credits">Кредиты </h1>
+      <ul class="credits__list">
+
+
+        <li class="credits__item button">
+          <img class="credits__image img" src="images/машина.jpg" alt="машина" width="350" height="350">
+          <h2 class="credits__title">Автокредит</h2>
+          <a class="credits__link" href="#"></a>
+        </li>
+
+
+        <li class="credits__item button">
+          <img class="credits__image img" src="images/ипотека.webp" alt="домик" width="350" height="350">
+          <h2 class="credits__title">Ипотека</h2>
+          <a class="credits__link" href="#"></a>
+        </li>
+
+
+        <li class="credits__item button">
+          <img class="credits__image img" src="images/rrefinace.jpg" alt="refinace" width="350" height="350">
+          <h2 class="credits__title">Рефинансирование</h2>
+          <a class="credits__link" href="#"></a>
+        </li>
+
+
+        <li class="credits__item button">
+          <img class="credits__image img" src="images/образоваие.jpg" alt="образование" width="350" height="350">
+          <h2 class="credits__title">Образование</h2>
+          <a class="credits__link" href="#"></a>
+        </li>
+
+
+    </section>
+
+    <section class="app">
+
+      <div class="app__wrapper">
+        <h1 class="app__title">Приложение</h1>
+        <p class="app__text">Все это и многое другое есть в приложении</p>
+      </div>
+      <img class="app__image img" src="images/приложение.webp" alt="приложение" width="350" height="350">
+      <div class="app__wrapper">
+        <ul class="app__list">
+          <li class="app__item button">Скачать<a class="app__link" href="#"></a></li>
+          <li class="app__item button">Открыть в браузере<a class="app__link" href="#"></a></li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="asking">
+
+      <div class="asking__wrapper">
+        <h1 class="asking__title">Часто задаваемые вопросы</h1>
+        <a class="asking__link button" href="#">перейти</a>
+      </div>
+
+      <div class="asking__wrapper">
+        <h1 class="asking__title">Обратная связь</h1>
+        <a class="asking__link button" href="#">перейти</a>
+      </div>
+
+    </section>
+
+    <section class="email" style="display: none;">
+      <form class="email__form" action="#">
+        <h3 class="email__title">Вход в личный кабинет</h3>
+        <input class="email__item" type="email" name="email" placeholder="Электронная почта" required>
+        <input class="email__item" type="password" name="password" placeholder="Пароль" required>
+        <button class="email__button button">Войти</button>
+      </form>
+    </section>
+
+
+
+
+
+  </main>
+
+  <footer class="footer container">
+    <section class="footer__connect">
+      <h4 class="footer__title">Обратная связь</h4>
+      <li class="footer__number">
+        <p>+79632356411</p>
+      </li>
+      <li class="footer__item"><a class="footer__link" href="#"><img src="images/тг.webp" alt="тг" width="40"
+            height="40"></a></li>
+    </section>
+
+    <section class="footer__menu">
+      <ul class="footer__list">
+        <li class="footer__item button">Акции<a class="footer__link" href="#"></a></li>
+        <li class="footer__item button">Вклады<a class="footer__link" href="#"></a></li>
+        <li class="footer__item button">Инвестиции<a class="footer__link" href="#"></a></li>
+        <li class="footer__item button">Кредиты<a class="footer__link" href="#credits"></a></li>
+      </ul>
+    </section>
+  </footer>
+
 </body>
+
 </html>
