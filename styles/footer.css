@@ -1,6 +1,8 @@
 .footer__connect{
     list-style: none;
+    flex-wrap: wrap;
 }
 .footer__list{
     text-decoration: none;
+    flex-wrap: wrap;
 }
