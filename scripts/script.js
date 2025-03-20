@@ -50,16 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
 /*Появление модального окна*/
 const HeaderButton=document.querySelector(".header__button");
 const MainButton=document.querySelector(".email");
-if (HeaderButton && MainButton) {
+const dialogLayout = document.querySelector('.dialog');
+if (HeaderButton && dialogLayout) {
     console.log("Кнопка и форма существуют");
     //Открытие модального окна при клике на кнопку "Вход"
     HeaderButton.addEventListener("click", () => {
         console.log(MainButton);
-        MainButton.removeAttribute("hidden");
-    //Закрытие модального окна при нажатии кнопки "Вход" 
-       
-
-    });}
+        dialogLayout.removeAttribute("hidden");
+    })
+    // Закрытие модального окна при клике вне его области
+    window.addEventListener('click', (event) => {
+        if (event.target === dialogLayout) {
+            dialogLayout.setAttribute('hidden', true);
+        }})
+    }
+        
 
 
 
