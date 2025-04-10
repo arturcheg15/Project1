@@ -65,6 +65,28 @@ if (HeaderButton && dialogLayout) {
         }})
     }
         
+//Объявляем переменную CreditsContainer и сохраняем в нее элементы treners
+const CreditsContainer = document.querySelector(".credits");
 
+//  проверяем существует ли элемент CreditsContainer, если он существует то переходим далее
+if (CreditsContainer) {
+    //далее создаем массив dataTitleCredits, который содержит строки с названиями услуг.(здесь уже пишем те значения, которые надо подставить вместо слова Услуга 1, Услуга 2 и т.д)
+            const dataTitleCredits = [
+                "Кредиты",
+                "Автокредит",
+                "Ипотека",
+                "Рефинансирование",
+                "Образовательный кредит",
+            ];
+//Объявляем переменную titleTreners и сохраняем в нее все элементы на странице с классом treners__subtitle (где должны стоять имена тренеров)
+const TitleCredits =
+CreditsContainer.querySelectorAll(".credits__title");
 
+// Проходим по каждому элементу массива titleCredits с помощью цикла forEach. Внутри функции 2 переменные: item – текущий заголовок, а index — его индекс в массиве.
+TitleCredits.forEach((item, index) => {
+
+//здесь обновляем значение текущего заголовка (textContent) на новое значение из массива dataTitleCards, используя индекс текущего заголовка.
+item.textContent = dataTitleCredits[index];
+});
+}
 
