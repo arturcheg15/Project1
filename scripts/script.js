@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 /*Появление модального окна*/
-const HeaderButton=document.querySelector(".header__button");
-const MainButton=document.querySelector(".email");
+const HeaderButton = document.querySelector(".header__button");
+const MainButton = document.querySelector(".email");
 const dialogLayout = document.querySelector('.dialog');
 if (HeaderButton && dialogLayout) {
     console.log("Кнопка и форма существуют");
@@ -62,32 +62,33 @@ if (HeaderButton && dialogLayout) {
     window.addEventListener('click', (event) => {
         if (event.target === dialogLayout) {
             dialogLayout.setAttribute('hidden', true);
-        }})
-    }
-        
+        }
+    })
+}
+
 //Объявляем переменную CreditsContainer и сохраняем в нее элементы treners
 const CreditsContainer = document.querySelector(".credits");
 
 //  проверяем существует ли элемент CreditsContainer, если он существует то переходим далее
 if (CreditsContainer) {
     //далее создаем массив dataTitleCredits, который содержит строки с названиями услуг.(здесь уже пишем те значения, которые надо подставить вместо слова Услуга 1, Услуга 2 и т.д)
-            const dataTitleCredits = [
-                "Кредиты",
-                "Автокредит",
-                "Ипотека",
-                "Рефинансирование",
-                "Образовательный кредит",
-            ];
-//Объявляем переменную titleTreners и сохраняем в нее все элементы на странице с классом credits__title (где должны стоять названия кредитов)
-const TitleCredits =
-CreditsContainer.querySelectorAll(".credits__title");
+    const dataTitleCredits = [
+        "Кредиты",
+        "Автокредит",
+        "Ипотека",
+        "Рефинансирование",
+        "Образовательный кредит",
+    ];
+    //Объявляем переменную titleTreners и сохраняем в нее все элементы на странице с классом credits__title (где должны стоять названия кредитов)
+    const TitleCredits =
+        CreditsContainer.querySelectorAll(".credits__title");
 
-// Проходим по каждому элементу массива titleCredits с помощью цикла forEach. Внутри функции 2 переменные: item – текущий заголовок, а index — его индекс в массиве.
-TitleCredits.forEach((item, index) => {
+    // Проходим по каждому элементу массива titleCredits с помощью цикла forEach. Внутри функции 2 переменные: item – текущий заголовок, а index — его индекс в массиве.
+    TitleCredits.forEach((item, index) => {
 
-//здесь обновляем значение текущего заголовка (textContent) на новое значение из массива dataTitleCredits, используя индекс текущего заголовка.
-item.textContent = dataTitleCredits[index];
-});
+        //здесь обновляем значение текущего заголовка (textContent) на новое значение из массива dataTitleCredits, используя индекс текущего заголовка.
+        item.textContent = dataTitleCredits[index];
+    });
 }
 
 //Объявляем переменную cardsPrice и сохраняем в нее элемент с классом price
@@ -96,36 +97,36 @@ const priceList = document.querySelector('.card__list');
 // Если такой элемент существует
 if (priceList) {
 
-//Создаем объект cardsPriceData, которая содержит данные для трех карточки.
-        const CreditsPriceData = {
-// каждая ссылка содержит button (кнопка), image (изображение),  (цена), link (ссылка).
-            price1: {
-                button: '– Вариант 1 –',
-                image: 'images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png',
-                link: 'ссылка 1',
-                
-            },
-            price2: {
-                button: '– Вариант 2 –',
-                image: 'images/синяя карта.webp',
-                link: 'ссылка 2',
-            },
-            price3: {
-                button: '– Вариант 3 –',
-                image: 'images/зеленая карта.webp',
-                link: 'ссылка 3',
-            },
-            price4: {
-                button: '– Вариант 4 –',
-                image: 'images/red-bank-card-.webp',
-                link: 'ссылка 4',
-            }
-        }
+    //Создаем объект cardsPriceData, которая содержит данные для трех карточки.
+    const CreditsPriceData = {
+        // каждая ссылка содержит button (кнопка), image (изображение),  (цена), link (ссылка).
+        price1: {
+            button: '– Вариант 1 –',
+            image: 'images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png',
+            link: 'ссылка 1',
 
-//Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки)
-        const createCard = (button, image, link) => {
-// Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
-            const card = `
+        },
+        price2: {
+            button: '– Вариант 2 –',
+            image: 'images/синяя карта.webp',
+            link: 'ссылка 2',
+        },
+        price3: {
+            button: '– Вариант 3 –',
+            image: 'images/зеленая карта.webp',
+            link: 'ссылка 3',
+        },
+        price4: {
+            button: '– Вариант 4 –',
+            image: 'images/red-bank-card-.webp',
+            link: 'ссылка 4',
+        }
+    }
+
+    //Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки)
+    const createCard = (button, image, link) => {
+        // Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
+        const card = `
             <li class="card__item button"> ${button}
             <img class="card__image img"
               src="${image}"
@@ -134,17 +135,88 @@ if (priceList) {
             </li>
 
         `;
-//  Возвращаем значение переменной card
-            return card;
-        }
-// Создаем цикл for и проходим по всем элементам объекта cardsPriceData.
-        for (const cardKey in CreditsPriceData) {
-//Получаем данные одной карточки из объекта cardsPriceData 
-            const card = CreditsPriceData[cardKey];
-//создаем переменную cardElement и вызываем функцию createLink, куда передаем тариф, цену, описание и кнопку (то, из чего будет состоять ваша карточка).
-            const cardElement = createCard(card.button, card.image, card.link);
-// с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка priceList.
-            priceList.insertAdjacentHTML('beforeend', cardElement);
-        }
+        //  Возвращаем значение переменной card
+        return card;
+    }
+    // Создаем цикл for и проходим по всем элементам объекта cardsPriceData.
+    for (const cardKey in CreditsPriceData) {
+        //Получаем данные одной карточки из объекта cardsPriceData 
+        const card = CreditsPriceData[cardKey];
+        //создаем переменную cardElement и вызываем функцию createLink, куда передаем тариф, цену, описание и кнопку (то, из чего будет состоять ваша карточка).
+        const cardElement = createCard(card.button, card.image, card.link);
+        // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка priceList.
+        priceList.insertAdjacentHTML('beforeend', cardElement);
+    }
 }
 
+const cardsImages = document.querySelector(".images");
+if (cardsImages) {
+    const cardListImages = cardsImages.querySelector(".images__list");
+
+    // Пример URL для получения данных с сервера
+    const apiURL = "images.json";
+
+    // Функция для создания карточки
+    const createCard = (imageURL, imageALT, imageWIDTH) => {
+        // Шаблонные строки и подстановки
+        const image = `
+            <li class="images__item">
+                <img class="images__picture" src="${imageURL[0]}" alt="${imageALT}" width="${imageWIDTH}">
+                <img class="images__picture" src="${imageURL[1]}" alt="${imageALT}" width="${imageWIDTH}" style="display: none;">
+            </li>
+        `;
+
+        return image;
+    };
+
+    // Запрос к серверу с помощью метода fetch
+    fetch(apiURL)
+        // После того как запрос выполнен, возвращается объект Response, где вызывается метод json(), который преобразует ответ в формат JSON
+        .then((response) => response.json())
+        //получение данных 
+        .then((images) => {
+            console.log(images); // Вывод данных в консоль
+            console.log(typeof images); // Вывод в консоль Типа полученных данных
+
+            images.forEach((item) => {
+                // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
+                const cardElement = createCard(
+                    item.imageURL,
+                    item.imageALT,
+                    item.imageWIDTH
+                );
+                // Добавление карточки на страницу в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
+                cardListImages.insertAdjacentHTML("beforeend", cardElement);
+            });
+            //СЮДА ВСТАВЬТЕ КОД ИЗ П 6. «Добавление обработчика событий для переключения изображений при клике на них»
+            //Объявляем переменную pictures и сохраняем в нее все изображения с классом images__picture 
+            const pictures = document.querySelectorAll(".images__picture");
+            if (pictures) {
+                // Пройдемся по каждому элементу массива pictures, с помощью цикла forEach. 
+                pictures.forEach((picture) => {
+                    //добавляем обработчик события клика по изображению:
+                    picture.addEventListener("click", () => {
+                        // получаем родительский элемент текущего изображения
+                        const parentItem = picture.parentElement;
+
+                        // Получаем все изображения в родительском элементе, для того чтобы работать только с изображениями, которые находятся в одной карточке
+                        const parentPictures =
+                            parentItem.querySelectorAll(".images__picture");
+
+                        // проходимся по всем изображениям, найденным в карточке
+                        parentPictures.forEach((parentPictures) => {
+                            //проверка условия если на текущее изображение не кликали, то оставляем это изображение видимым, иначе скрываем
+                            if (parentPictures !== picture) {
+                                parentPictures.style.display = "block"; // Показываем другое изображение
+                            } else {
+                                parentPictures.style.display = "none"; // Скрываем текущее изображение
+                            }
+                        });
+                    });
+                });
+
+            }
+
+        });
+
+}

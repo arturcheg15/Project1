@@ -1,0 +1,19 @@
+[
+    {
+        "imageURL":[
+            "images/png-clipart-yellow-and-black-magstripe-card-emoji-credit-card-symbol-money-credit-card-angle-rectangle.png",
+            "images/синяя карта.webp"
+        ],
+        "imageALT": "Карточка",
+        "imageWIDTH": 200
+},
+
+    {
+      "imageURL": [
+        "images/зеленая карта.webp",
+        "images/red-bank-card-.webp"
+      ],
+      "imageALT": "Карточка",
+      "imageWIDTH": 200
+    }
+]
