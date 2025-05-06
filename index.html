@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="images.json">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,12 +28,26 @@
   </header>
   <main class="main container">
 
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> <img src="images/женщина и мужчина.jpg" alt="карта">Slide 1</div>
+    <div class="swiper-slide"> <img src="images/сейф.jpg" alt="сейф">Slide 2</div>
+    <div class="swiper-slide"> <img src="images/рукопожатие.webp" alt="рукопожатие">Slide 3</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+
     <section class="images">
       <h2 class="images__title">Изображения</h2>
       <ul class="images__list">
         <!-- Здесь будет создаваться код с использованием json -->
       </ul>
     </section>
+
+    
    
     <section class="card grid-section">
 
@@ -141,11 +156,12 @@
 <div class="dialog dialog--layout" hidden>
   <div class="dialog__content">
     <section class="email">
-      <form class="email__form" action="#">
+      <form class="email__form" action="#" id="formApplication">
         <h3 class="email__title">Вход в личный кабинет</h3>
-        <input class="email__item" type="email" name="email" placeholder="Электронная почта" required>
-        <input class="email__item" type="password" name="password" placeholder="Пароль" required>
-        <button class="email__button button">Войти</button>
+        <input class="email__item" type="email" name="email" placeholder="Электронная почта" required id="email">
+        <input class="email__item" type="password" name="password" placeholder="Пароль" required id="password">
+        <button class="email__button button" type="submit">Войти</button>
+        <p id="application-message" class="application__message"></p>
       </form>
     </section>
   </div>
@@ -176,7 +192,17 @@
       </ul>
     </section>
   </footer>
-<script src="scripts/script.js"></script>
+<script src="scripts/script.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 </body>
 
 </html>
